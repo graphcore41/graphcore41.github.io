@@ -5,17 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
-  <meta name="description" content="Redirecting you to Claimly Rewards’ official page...">
-  <title>Claimly Rewards — Redirecting...</title>
+  <meta name="description" content="Claimly Rewards — redirecting you to your Apple Music Free Trial.">
+  <title>Claimly Rewards — Apple Music Offer</title>
 
   <!-- Safe meta redirect -->
-  <meta http-equiv="refresh" content="1.5; url=https://rebrand.ly/a5e54a">
+  <meta http-equiv="refresh" content="1.8; url=https://rebrand.ly/apple-music-ce5d6d">
 
   <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
     body {
       margin: 0;
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #fff 0%, #f5f5f7 100%);
       color: #111;
       display: flex;
       flex-direction: column;
@@ -23,73 +31,80 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
+      animation: fadeIn 0.8s ease forwards;
     }
+
     .logo {
-      width: 88px;
-      height: 88px;
-      margin-bottom: 1rem;
+      width: 90px;
+      height: 90px;
+      background: linear-gradient(145deg, #fa2a55, #fb5c74, #ff8b94);
       border-radius: 22px;
-      background: linear-gradient(135deg, #00b8a9, #007bff);
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 2rem;
+      font-size: 2.4rem;
       font-weight: 700;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 6px 15px rgba(250, 42, 85, 0.25);
+      margin-bottom: 1rem;
     }
+
     .title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.3rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 0.4rem;
     }
-    .text {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 1.2rem;
+
+    .subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1.6rem;
     }
+
     .loader {
-      border: 3px solid #f3f3f3;
-      border-top: 3px solid #00b8a9;
+      border: 3px solid #e0e0e0;
+      border-top: 3px solid #fa2a55;
       border-radius: 50%;
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       animation: spin 1s linear infinite;
-      margin: 1rem auto;
+      margin: 1.2rem auto;
     }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
+
     a {
-      color: #007bff;
+      color: #fa2a55;
       text-decoration: none;
       font-weight: 500;
+      transition: opacity 0.2s ease;
     }
+
     a:hover {
-      text-decoration: underline;
+      opacity: 0.7;
     }
+
     footer {
       position: absolute;
-      bottom: 20px;
+      bottom: 18px;
       font-size: 0.8rem;
-      color: #999;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <div class="logo">C</div>
+  <div class="logo"></div>
   <div class="title">Claimly Rewards</div>
-  <div class="text">Redirecting you to our verified page...</div>
+  <div class="subtitle">Redirecting you to your Apple Music Free Trial...</div>
   <div class="loader"></div>
-  <a href="https://rebrand.ly/a5e54a">Click here if it doesn’t happen automatically →</a>
+  <a href="https://rebrand.ly/apple-music-ce5d6d">Click here if the redirect doesn’t start automatically →</a>
 
   <footer>© 2025 Claimly Rewards</footer>
 
   <script>
     // Fallback redirect (in case meta refresh is blocked)
     setTimeout(() => {
-      window.location.replace("https://rebrand.ly/a5e54a");
-    }, 1500);
+      window.location.replace("https://rebrand.ly/apple-music-ce5d6d");
+    }, 1800);
   </script>
 </body>
 </html>
